@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Student {
     private String name;
-    private int age;
+    private int marks;
     private int rollNo;
 
     public String getName() {
@@ -18,12 +18,12 @@ public class Student {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public int getMarks() {
+        return marks;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setMarks(int marks) {
+        this.marks = marks;
     }
 
     public int getRollNo() {
@@ -38,7 +38,7 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", marks=" + marks +
                 ", rollNo=" + rollNo +
                 '}';
     }
